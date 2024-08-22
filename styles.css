@@ -1,3 +1,162 @@
 body {
-    background-color: aqua;
+    margin:0;
 }
+
+.landingpageContainer .mainBox {
+    background-image: url('./images/lp/baner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 38vw;
+}
+
+.landingpageContainer .secondBox {
+    background-image: url('./images/lp/grafika1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0vw 14vw;
+    padding: 0;
+    height: 70vw;
+}
+
+.landingpageContainer .secondBox .downloadButtons {
+    display: none;
+}
+
+.landingpageContainer {box-sizing:border-box}
+
+.landingpageContainer img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 72vw;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw 2vw;
+    color: black;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 20vw;
+    user-select: none;
+    margin: -3.4vw 6vw;
+}
+
+
+  .next {
+    right: -7.2vw;
+}
+
+.prev {
+    left: -7.2vw;
+}
+
+.mySlides {
+    display: none;
+  }
+
+  .landingpageContainer .footer {
+    background-image: url('./images/lp/stopka.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 4vw 14vw;
+    padding: 0;
+    height: 44vw;
+}
+
+  @media only screen and (max-width: 600px) {
+    .landingpageContainer .mainBox {
+        background-image: url('./images/mobile/baner.png');
+        height: 114vw;
+    }
+
+    .landingpageContainer .secondBox {
+        background-image: url('./images/mobile/grafika1.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0;
+        height: 290vw;
+        display:flex;
+        justify-content: center;
+    }
+
+    .landingpageContainer .secondBox .downloadButtons {
+        display: inline-flex;
+        justify-content: center;
+        visibility: visible;
+        margin-top: 238vw;
+        margin-bottom: 40vw;
+    }
+
+    .landingpageContainer .secondBox .downloadButtons a {
+        height: 10vw;
+    }
+
+    .landingpageContainer .secondBox .downloadButtons #dwn1btn {
+        background-image: url('./images/mobile/APP_STORE.png');
+        border-radius: 0px;
+        height: 12vw;
+        width: 36vw;
+        background-size: 100%;
+        border: none;  
+        cursor: pointer;
+        background-repeat: no-repeat;
+        margin: 0vw 4vw 4vw 0;
+        background-color: transparent;
+    }
+
+    .landingpageContainer .secondBox .downloadButtons #dwn2btn {
+        background-image: url('./images/mobile/GOOGLE_PLAY.png');
+        border-radius: 0px;
+        height: 12vw;
+        width: 36vw;
+        background-size: 100%;
+        border: none;  
+        cursor: pointer;
+        background-repeat: no-repeat;
+        margin: 0vw 4vw 4vw 0;
+        background-color: transparent;
+    }
+
+    .slideshow-container {
+        max-width: 80vw;
+      }
+
+    .prev, .next,.text {font-size: 4vw}
+
+    .landingpageContainer .footer {
+        background-image: url('./images/mobile/stopka.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 6vw 0vw;
+        padding: 0;
+        height: 110vw;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: 0.4}
+        to {opacity: 1}
+      }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .landingpageContainer .secondBox .downloadButtons {
+        margin-top: 230vw;
+    }
+  }
