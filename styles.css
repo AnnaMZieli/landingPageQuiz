@@ -95,7 +95,7 @@ body {
         display: inline-flex;
         justify-content: center;
         visibility: visible;
-        margin-top: 238vw;
+        margin-top: 214vw;
         margin-bottom: 40vw;
     }
 
@@ -155,8 +155,8 @@ body {
       }
   }
 
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 400px) {
     .landingpageContainer .secondBox .downloadButtons {
-        margin-top: 230vw;
+        margin-top: 208vw;
     }
   }
