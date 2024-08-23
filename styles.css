@@ -70,9 +70,24 @@ body {
     background-image: url('./images/lp/stopka.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 4vw 14vw;
+    margin: 4vw 14vw 0 14vw;
     padding: 0;
     height: 44vw;
+}
+
+.landingpageContainer .linkRegulamin {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.landingpageContainer .linkRegulamin a {
+    font-family: "myriad-pro-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
+    margin-bottom: 4vw;
 }
 
   @media only screen and (max-width: 600px) {
@@ -153,6 +168,11 @@ body {
         from {opacity: 0.4}
         to {opacity: 1}
       }
+
+      .landingpageContainer .linkRegulamin a {
+        font-size: 4vw;
+        margin-bottom: 8vw;
+    }
   }
 
   @media only screen and (max-width: 400px) {
